@@ -39,7 +39,7 @@ class Container extends Component {
 
         return (
             <div>
-                <h2>Score :{this.state.total}</h2>
+                <h2 className='score'>Score :{this.state.total}</h2>
                 <div className='photos-container'>
                     {newImage.map(images => (
                         <Image
@@ -48,8 +48,8 @@ class Container extends Component {
                             url={images.url}
                         />))}
                 </div>
-                <hr></hr>
-                <p>Willam Navas 2019</p>
+                <hr/>
+                <p className='footer'>Willam Navas 2019</p>
             </div>
         )
     }
